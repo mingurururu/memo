@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>홈</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #f2f4f6;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .screen {
+    position: relative;
+    width: 390px;
+    height: 844px;
+    margin: 0 auto;
+    background: #f2f4f6;
+    overflow: hidden;
+  }
+  .screen > * { position: absolute; }
+  .t { white-space: nowrap; word-break: break-word; font-style: normal; }
+  .box { position: absolute; }
+  svg { display: block; overflow: visible; }
+
+  .date { left: 24px; top: 64px; font-weight: 500; font-size: 15px; line-height: 22px; letter-spacing: -0.2px; color: #8b95a1; }
+  .title { left: 24px; top: 94px; font-weight: 700; font-size: 28px; line-height: 38px; letter-spacing: -0.8px; color: #191f28; white-space: nowrap; }
+  .title b { font-weight: 700; color: #3182f6; }
+
+  .chip { top: 186px; height: 36px; border-radius: 999px; background: #fff; }
+  .chip.on { background: #3182f6; }
+  .chip-t { top: 193px; font-weight: 700; font-size: 15px; line-height: 22px; letter-spacing: -0.2px; color: #4e5968; }
+  .chip-t.on { color: #fff; }
+
+  .card { left: 16px; width: 358px; background: #fff; border-radius: 24px; }
+  .h { font-weight: 700; font-size: 15px; line-height: 22px; letter-spacing: -0.2px; color: #191f28; }
+  .ic { left: 36px; width: 44px; height: 44px; border-radius: 12px; }
+  .doc { left: 47px; width: 22px; height: 22px; }
+  .name { left: 96px; font-weight: 700; font-size: 17px; line-height: 24px; letter-spacing: -0.3px; color: #191f28; }
+  .sub { left: 96px; font-weight: 400; font-size: 14px; line-height: 20px; letter-spacing: -0.1px; color: #4e5968; }
+  .when { left: 330px; font-weight: 500; font-size: 13px; line-height: 18px; color: #8b95a1; }
+
+  .cta { left: 16px; top: 754px; width: 358px; height: 56px; border-radius: 16px; background: #3182f6; border: 0; cursor: pointer; }
+  .cta-t { left: 166.5px; top: 770px; font-weight: 700; font-size: 17px; line-height: 24px; letter-spacing: -0.2px; color: #fff; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="doc" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.83333" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6.41667 3.66667H12.8333L16.5 7.33333V18.3333H6.41667V3.66667Z"/>
+      <path d="M12.8333 3.66667V7.33333H16.5M9.16667 11H13.75M9.16667 14.6667H13.75"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main class="screen">
+  <p class="t date">10월 30일 금요일</p>
+  <p class="title">오늘까지 메모를<br><b>128개</b> 남겼어요</p>
+
+  <div class="chip on" style="left:20px;width:60px"></div>
+  <p class="t chip-t on" style="left:36px">전체</p>
+  <div class="chip" style="left:88px;width:60px"></div>
+  <p class="t chip-t" style="left:104px">업무</p>
+  <div class="chip" style="left:156px;width:60px"></div>
+  <p class="t chip-t" style="left:172px">개인</p>
+  <div class="chip" style="left:224px;width:87px"></div>
+  <p class="t chip-t" style="left:240px">아이디어</p>
+
+  <!-- 고정한 메모 -->
+  <div class="card" style="top:238px;height:200px"></div>
+  <p class="t h" style="left:56px;top:259px">고정한 메모</p>
+  <svg style="left:36px;top:262px" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#3182F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 2.33333H10L9.4 5.8L11.3333 8H4.66667L6.6 5.8L6 2.33333Z"/><path d="M8 8V13.3333"/>
+  </svg>
+
+  <div class="ic" style="top:300px;background:#e8f3ff"></div>
+  <svg class="doc" style="top:311px;color:#3182F6"><use href="#doc"/></svg>
+  <p class="t name" style="top:298px">디자인 리뷰 회의록</p>
+  <p class="t sub" style="top:326px">검수 기준과 다음 할 일 정리</p>
+  <p class="t when" style="top:313px">오늘</p>
+
+  <div class="ic" style="top:372px;background:#e3f8ec"></div>
+  <svg class="doc" style="top:383px;color:#12A150"><use href="#doc"/></svg>
+  <p class="t name" style="top:370px">주말 등산 준비</p>
+  <p class="t sub" style="top:398px">물 두 병, 간식, 바람막이 챙기기</p>
+  <p class="t when" style="top:385px">어제</p>
+
+  <!-- 최근 메모 -->
+  <div class="card" style="top:454px;height:272px"></div>
+  <p class="t h" style="left:36px;top:475px">최근 메모</p>
+  <p class="t h" style="left:280px;top:475px;font-weight:500;color:#8b95a1">전체 보기</p>
+  <svg style="left:342px;top:478px" width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#8B95A1" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 4L10 8L6 12"/>
+  </svg>
+
+  <div class="ic" style="top:516px;background:#ffeaf1"></div>
+  <svg class="doc" style="top:527px;color:#E5397A"><use href="#doc"/></svg>
+  <p class="t name" style="top:514px">장보기 목록</p>
+  <p class="t sub" style="top:542px">우유, 계란, 사과, 커피 원두, 식빵, 바나나, 요거트, 치즈, 양파, 감자, 대파, 두부, 휴지, 세제, 샴푸까지 퇴근길에 마트에 들러서 한꺼번에 사 오기</p>
+  <p class="t when" style="top:529px">오늘</p>
+
+  <div class="ic" style="top:588px;background:#fff1e5"></div>
+  <svg class="doc" style="top:599px;color:#F76808"><use href="#doc"/></svg>
+  <p class="t name" style="top:586px">앱 아이콘 아이디어</p>
+  <p class="t sub" style="top:614px">메모지 모서리가 접힌 모양</p>
+  <p class="t when" style="top:601px">오늘</p>
+
+  <div class="ic" style="top:660px;background:#e3f8ec"></div>
+  <svg class="doc" style="top:671px;color:#12A150"><use href="#doc"/></svg>
+  <p class="t name" style="top:658px">읽을 책</p>
+  <p class="t sub" style="top:686px">디자인 시스템 책 두 권</p>
+  <p class="t when" style="top:673px">어제</p>
+
+  <!-- CTA -->
+  <button class="cta" type="button" aria-label="새 메모 쓰기"></button>
+  <svg style="left:138.5px;top:772px" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="#fff" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 4.16667V15.8333M4.16667 10H15.8333"/>
+  </svg>
+  <p class="t cta-t">새 메모 쓰기</p>
+</main>
+</body>
+</html>

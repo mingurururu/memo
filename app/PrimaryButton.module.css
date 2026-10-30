@@ -1,0 +1,37 @@
+.button {
+  position: sticky;
+  bottom: var(--space-34);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  height: 56px;
+  padding: 0 var(--space-24);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--text-on-primary);
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  transition: transform 120ms ease-out;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .chip {
+    transition: none;
+  }
+
+  .button:active,
+  .chip:active {
+    transform: none;
+  }
+}

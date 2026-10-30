@@ -1,0 +1,37 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.active {
+  color: var(--color-primary);
+}
+
+.button {
+  transition: transform 120ms ease-out;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .chip {
+    transition: none;
+  }
+
+  .button:active,
+  .chip:active {
+    transform: none;
+  }
+}

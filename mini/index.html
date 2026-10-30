@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>메모리 카드 게임</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>메모리 카드 게임</h1>
+    <div class="status">
+      <span>시도 <b id="moves">0</b></span>
+      <span>맞춘 쌍 <b id="pairs">0</b>/8</span>
+      <span>시간 <b id="time">0</b>초</span>
+      <button id="restart" type="button">다시 시작</button>
+    </div>
+    <div id="board" class="board"></div>
+    <p id="win" class="win" hidden></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

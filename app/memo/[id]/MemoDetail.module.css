@@ -1,0 +1,84 @@
+.main {
+  flex: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  padding: var(--space-24) var(--space-20);
+  border-radius: var(--radius-xl);
+  background: var(--surface-card);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  height: 26px;
+  padding: 0 var(--space-8);
+  border-radius: var(--radius-full);
+}
+
+.created {
+  color: var(--text-muted);
+}
+
+.title {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.divider {
+  height: 1px;
+  border: 0;
+  margin: 0;
+  background: var(--border-default);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.h2,
+.h3 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.text {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text-secondary);
+}
+
+.listItem {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.footer {
+  margin: 0;
+  color: var(--text-muted);
+}

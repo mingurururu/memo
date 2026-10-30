@@ -1,0 +1,39 @@
+.chip {
+  flex-shrink: 0;
+  height: 36px;
+  padding: 0 var(--space-16);
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--surface-card);
+  color: var(--text-secondary);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.selected {
+  background: var(--color-primary);
+  color: var(--text-on-primary);
+}
+
+.chip {
+  transition:
+    background-color 160ms ease-out,
+    color 160ms ease-out,
+    transform 120ms ease-out;
+}
+
+.chip:active {
+  transform: scale(0.95);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .chip {
+    transition: none;
+  }
+
+  .button:active,
+  .chip:active {
+    transform: none;
+  }
+}

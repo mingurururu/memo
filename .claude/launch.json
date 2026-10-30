@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "memory-game",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["--yes", "http-server", "mini", "-p", "8123", "-c-1"],
+      "port": 8123
+    },
+    {
+      "name": "memo-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000
+    }
+  ]
+}

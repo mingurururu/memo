@@ -1,0 +1,20 @@
+.navBar {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: var(--space-8);
+  min-width: 0;
+  padding: 0 var(--space-4);
+  white-space: nowrap;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
